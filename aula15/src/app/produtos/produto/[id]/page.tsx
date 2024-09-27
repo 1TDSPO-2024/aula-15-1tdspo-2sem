@@ -26,11 +26,11 @@ export default function Produto({params}:{params:{id:number}}) {
         <img src={produto.imagem} alt="Imagem Produto" />
         <p>Nome: {produto.nome}</p>
         <p>Preço: {produto.preco}</p>
-        <p>Marca</p>
-        <p>Cor</p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <p>Marca: {produto.marca}</p>
+        <p>Cor: {produto.cor}</p>
+        <p>Modelo: {produto.modelo}</p>
+        <p>Quantidade: {produto.quantidade}</p>
+        <p>Categoria: {produto.categoria}</p>
     </div>
   )
 }
