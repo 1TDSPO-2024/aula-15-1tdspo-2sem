@@ -22,6 +22,11 @@ export default function Produto({ params }: { params: { id: number } }) {
       <h1>Produto</h1>
       <p>ID: {produto?.id}</p>
       <p>Nome: {produto?.nome}</p>
+      <p>Preço: {produto?.preco}</p>
+      <p>Marca: {produto?.marca}</p>
+      <p>Modelo: {produto?.modelo}</p>
+      <p>Descrição: {produto?.descricao}</p>
+      <img src={produto?.imagem} alt={produto?.nome} height="100" width="100" />
     </div>
   );
 }
