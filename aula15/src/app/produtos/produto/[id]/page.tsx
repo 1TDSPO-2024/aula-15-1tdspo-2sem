@@ -1,4 +1,4 @@
-
+import { useEffect, useState } from "react";
 export default function Produto({params}:{params:{id:number}}) {
 
     
@@ -7,6 +7,15 @@ export default function Produto({params}:{params:{id:number}}) {
     <div>
         <h1>Produto</h1>
         <p>ID : {params.id}</p>
+        useEffect(() => {
+  const chamadaId = async ()=> {
+    const response1 = await fetch("http://localhost:3000/api/base-produtos");
+    const dados = await response.json();
+    setProdutos(dados);
+  };
+  chamadaDaApi();
+}, [])
+
     </div>
   )
 }
